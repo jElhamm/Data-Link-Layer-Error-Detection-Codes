@@ -15,5 +15,6 @@ extern uint32_t crcTable[256];
 
 void generateCRCTable();
 uint32_t calculateCRC(char *data);
+bool checkErrorCRC(char *data, uint32_t crc);
 
 #endif

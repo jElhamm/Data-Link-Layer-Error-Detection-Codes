@@ -32,3 +32,8 @@ uint32_t calculateCRC(char *data) {
     return crc;     
 }
  
+// Function to check if CRC matches the calculated CRC from the data
+bool checkErrorCRC(char *data, uint32_t crc) {
+    uint32_t calculatedCRC = calculateCRC(data);
+    return crc == calculatedCRC;
+}
