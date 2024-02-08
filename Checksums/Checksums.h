@@ -9,6 +9,8 @@
 #ifndef CHECKSUMS_H
 #define CHECKSUMS_H
 
+
 unsigned short calculateChecksum(char data[], int size);
+int verifyChecksum(char data[], int size);
 
 #endif

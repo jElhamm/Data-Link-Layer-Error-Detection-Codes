@@ -26,4 +26,8 @@ unsigned short calculateChecksum(char data[], int size) {
     }
     return (unsigned short)(~sum);
 }
- 
+
+// Verify if the calculated checksum is 0, indicating data integrity
+int verifyChecksum(char data[], int size) {
+    return calculateChecksum(data, size) == 0;
+}
