@@ -8,6 +8,8 @@
 
 
 int checkEvenParity(char *message, int len);
+void encodeLDPC(char *message, int len);
+void decodeLDPC(char *message, int len);
 
 #endif
 
@@ -18,3 +20,10 @@ int checkEvenParity(char *message, int len);
 
   * 1. `checkEvenParity`: Takes a message and its length as input and checks if the message has even parity, returning a boolean result.
    
+  * 2. `encodeLDPC`: Takes a message and its length as input, then encodes the message using LDPC codes.
+   
+  * 3. `decodeLDPC`: Takes a message and its length as input, then decodes the message using LDPC codes.
+
+  * These function declarations help in separating the LDPC operations into a modular and reusable component 
+  * for encoding and decoding messages using LDPC codes.
+**/
